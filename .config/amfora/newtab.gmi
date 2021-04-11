@@ -1,0 +1,5 @@
+# New Tab
+
+=> gemini://andrewyu.org
+=> gemini://gemini.circumlunar.space
+=> gemini://distro.tube
