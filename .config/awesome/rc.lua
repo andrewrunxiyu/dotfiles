@@ -116,6 +116,7 @@ local modkey1      = "Control"
 -- personal variables
 --change these variables if you want
 local browser1          = "qutebrowser"
+local gmib          	= "termite -e amfora"
 local browser2          = "firefox"
 local browser3          = "chromium -no-default-browser-check"
 local editor            = os.getenv("EDITOR") or "nvim"
@@ -306,6 +307,8 @@ globalkeys = my_table.join(
     -- {{{ Personal keybindings
     awful.key({ modkey }, "w", function () awful.util.spawn( browser1 ) end,
         {description = browser1, group = "function keys"}),
+    awful.key({ modkey }, "a", function () awful.util.spawn( gmib ) end,
+        {description = "Gemini", group = "function keys"}),
 
     -- Function keys
 --    awful.key({ }, "F12", function () awful.util.spawn( "xfce4-terminal --drop-down" ) end,

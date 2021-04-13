@@ -1,5 +1,7 @@
-# New Tab
+# Start
 
-=> gemini://andrewyu.org
-=> gemini://gemini.circumlunar.space
-=> gemini://distro.tube
+=> gemini://core Local Andrew's Capsule
+=> gemini://andrewyu.org Remote Andrew's Capsule
+=> gemini://rawtext.club/~sloum/geminews Geminews
+=> gemini://gemini.circumlunar.space Project Gemini
+=> gemini://distro.tube DistroTube

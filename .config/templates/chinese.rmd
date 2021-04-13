@@ -1,0 +1,8 @@
+---
+title: "未命名文档"
+author: "Andrew Yu"
+date: ""
+output: pdf_document
+hearder-includes:
+	- \usepackage{CJKutf8}
+---

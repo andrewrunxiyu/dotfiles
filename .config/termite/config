@@ -8,7 +8,7 @@ cursor_blink = system
 cursor_shape = block
 dynamic_title = true
 filter_unmatched_urls = true
-font = Monospace 11
+font = Monospace 25
 #font = Hack Bold 10
 geometry = 900x650
 highlight = #2f2f2f
@@ -23,7 +23,7 @@ search_wrap = true
 urgent_on_bell = true
 
 [hints]
-font = Monospace 12
+font = Monospace 25
 foreground = #dcdccc
 background = #3f3f3f
 active_foreground = #e68080
@@ -46,7 +46,7 @@ roundness = 2.0
 
 [colors]
 # ArcoLinux Default Theme
-background = rgba(40, 42, 54, 0.8)
+background = rgba(40, 42, 54, 0.95)
 
 # special
 foreground      = #f8f8f2
