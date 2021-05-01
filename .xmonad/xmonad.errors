@@ -1,7 +1,8 @@
 
-xmonad.hs:282:1: warning: [-Wtabs]
-    Tab character found here, and in three further locations.
-    Please use spaces instead.
+xmonad.hs:495:44: error:
+    • Variable not in scope: xmproc2 :: GHC.IO.Handle.Types.Handle
+    • Perhaps you meant one of these:
+        ‘xmproc0’ (line 471), ‘xmproc1’ (line 472)
     |
-282 |                        , swn_fade              = 1.0
-    | ^^^^^^^^
+495 |                               >> hPutStrLn xmproc2 x                          -- xmobar on monitor 3
+    |                                            ^^^^^^^
