@@ -375,10 +375,6 @@ globalkeys = my_table.join(
 
 
     -- ctrl+alt +  ...
-    awful.key({ modkey1, altkey   }, "w", function() awful.util.spawn( "arcolinux-welcome-app" ) end,
-        {description = "ArcoLinux Welcome App", group = "alt+ctrl"}),
-    awful.key({ modkey1, altkey   }, "e", function() awful.util.spawn( "arcolinux-tweak-tool" ) end,
-        {description = "ArcoLinux Tweak Tool", group = "alt+ctrl"}),
     awful.key({ modkey1, altkey   }, "Next", function() awful.util.spawn( "conky-rotate -n" ) end,
         {description = "Next conky rotation", group = "alt+ctrl"}),
     awful.key({ modkey1, altkey   }, "Prior", function() awful.util.spawn( "conky-rotate -p" ) end,
@@ -923,38 +919,38 @@ awful.rules.rules = {
     -- Set applications to be maximized at startup.
     -- find class or role via xprop command
 
-    { rule = { class = editorgui },
-          properties = { maximized = false } },
-
-    { rule = { class = "Geany" },
-          properties = { maximized = false, floating = false } },
-
-    { rule = { class = "Gimp*", role = "gimp-image-window" },
-          properties = { maximized = false } },
-
-    { rule = { class = "Gnome-disks" },
-          properties = { maximized = false } },
-
-    { rule = { class = "inkscape" },
-          properties = { maximized = false } },
-
-    { rule = { class = mediaplayer },
-          properties = { maximized = false } },
-
-    { rule = { class = "Vlc" },
-          properties = { maximized = false } },
-
-    { rule = { class = "VirtualBox Manager" },
-          properties = { maximized = false } },
-
-    { rule = { class = "VirtualBox Machine" },
-          properties = { maximized = false } },
-
-    { rule = { class = "Vivaldi-stable" },
-          properties = { maximized = false, floating = false } },
-
-    { rule = { class = "Vivaldi-stable" },
-          properties = { callback = function (c) c.maximized = false end } },
+--    { rule = { class = editorgui },
+--          properties = { maximized = false } },
+--
+--    { rule = { class = "Geany" },
+--          properties = { maximized = false, floating = false } },
+--
+--    { rule = { class = "Gimp*", role = "gimp-image-window" },
+--          properties = { maximized = false } },
+--
+--    { rule = { class = "Gnome-disks" },
+--          properties = { maximized = false } },
+--
+--    { rule = { class = "inkscape" },
+--          properties = { maximized = false } },
+--
+--    { rule = { class = mediaplayer },
+--          properties = { maximized = false } },
+--
+--    { rule = { class = "Vlc" },
+--          properties = { maximized = false } },
+--
+--    { rule = { class = "VirtualBox Manager" },
+--          properties = { maximized = false } },
+--
+--    { rule = { class = "VirtualBox Machine" },
+--          properties = { maximized = false } },
+--
+--    { rule = { class = "Vivaldi-stable" },
+--          properties = { maximized = false, floating = false } },
+--
+--    { rule = { class = "Vivaldi-stable" },
+--          properties = { callback = function (c) c.maximized = false end } },
 
     --IF using Vivaldi snapshot you must comment out the rules above for Vivaldi-stable as they conflict
 --    { rule = { class = "Vivaldi-snapshot" },
@@ -971,59 +967,59 @@ awful.rules.rules = {
 
 
 
-    -- Floating clients.
-    { rule_any = {
-        instance = {
-          "DTA",  -- Firefox addon DownThemAll.
-          "copyq",  -- Includes session name in class.
-        },
-        class = {
-          "Arandr",
-          "Arcolinux-welcome-app.py",
-          "Blueberry",
-          "Galculator",
-          "Gnome-font-viewer",
-          "Gpick",
-          "Imagewriter",
-          "Font-manager",
-          "Kruler",
-          "MessageWin",  -- kalarm.
-          "arcolinux-logout",
-          "Peek",
-          "Skype",
-          "System-config-printer.py",
-          "Sxiv",
-          "Unetbootin.elf",
-          "Wpa_gui",
-          "pinentry",
-          "veromix",
-          "xtightvncviewer",
-          "Xfce4-terminal"},
-
-        name = {
-          "Event Tester",  -- xev.
-        },
-        role = {
-          "AlarmWindow",  -- Thunderbird's calendar.
-          "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
-          "Preferences",
-          "setup",
-        }
-      }, properties = { floating = true }},
-
-          -- Floating clients but centered in screen
-    { rule_any = {
-       	class = {
-       		"Polkit-gnome-authentication-agent-1",
-			"Arcolinux-calamares-tool.py"
-				},
-				},
-      	properties = { floating = true },
-	      	callback = function (c)
-    		  awful.placement.centered(c,nil)
-       		end }
+--    -- Floating clients.
+--    { rule_any = {
+--        instance = {
+--          "DTA",  -- Firefox addon DownThemAll.
+--          "copyq",  -- Includes session name in class.
+--        },
+--        class = {
+--          "Arandr",
+----          "Arcolinux-welcome-app.py",
+--          "Blueberry",
+--          "Galculator",
+--          "Gnome-font-viewer",
+--          "Gpick",
+--          "Imagewriter",
+--          "Font-manager",
+--          "Kruler",
+--          "MessageWin",  -- kalarm.
+--          "arcolinux-logout",
+--          "Peek",
+--          "Skype",
+--          "System-config-printer.py",
+--          "Sxiv",
+--          "Unetbootin.elf",
+--          "Wpa_gui",
+--          "pinentry",
+--          "veromix",
+--          "xtightvncviewer",
+--          "Xfce4-terminal"},
+--
+--        name = {
+--          "Event Tester",  -- xev.
+--        },
+--        role = {
+--          "AlarmWindow",  -- Thunderbird's calendar.
+--          "pop-up",       -- e.g. Google Chrome's (detached) Developer Tools.
+--          "Preferences",
+--          "setup",
+--        }
+--      }, properties = { floating = true }},
+--
+--          -- Floating clients but centered in screen
+--    { rule_any = {
+--       	class = {
+--       		"Polkit-gnome-authentication-agent-1",
+----			"Arcolinux-calamares-tool.py"
+--				},
+--				},
+--      	properties = { floating = true },
+--	      	callback = function (c)
+--    		  awful.placement.centered(c,nil)
+--       		end }
 }
--- }}}
+---- }}}
 
 -- {{{ Signals
 -- Signal function to execute when a new client appears.

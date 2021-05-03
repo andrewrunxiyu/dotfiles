@@ -79,3 +79,5 @@ alias nn="cp $HOME/.config/templates/article.ms"
 alias pi="ssh 10.0.1.12"
 alias ay="ssh andrew@andrewyu.org"
 alias ry="ssh root@andrewyu.org"
+
+alias sudo="doas"

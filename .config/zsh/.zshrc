@@ -72,7 +72,7 @@ autoload edit-command-line; zle -N edit-command-line
 bindkey '^e' edit-command-line
 
 # Fix unusable termite/alacritty/etc when SSHing to another machine
-export TERM=st-256color
+export TERM=tmux-256color
 
 # Dotfiles
 export DOTBARE_DIR="$HOME/.local/share/dot"

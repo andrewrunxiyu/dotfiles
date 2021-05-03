@@ -1,7 +1,8 @@
 # Start
 
+=> gemini://gempaper.strangled.net/mirrorlist Resources
 => gemini://core Local Andrew's Capsule
 => gemini://andrewyu.org Remote Andrew's Capsule
-=> gemini://rawtext.club/~sloum/geminews Geminews
+=> gemini://geminispace.info Gemini Space
 => gemini://gemini.circumlunar.space Project Gemini
 => gemini://distro.tube DistroTube
