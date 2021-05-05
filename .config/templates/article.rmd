@@ -1,6 +1,0 @@
----
-title: "Untitled"
-author: "Andrew Yu"
-date: ""
-output: pdf_document
----
